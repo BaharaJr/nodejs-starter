@@ -23,6 +23,16 @@ Host: localhost:4000
 }
 ```
 
+### Test Database Connection: `/test`
+
+```
+GET test
+Host: localhost:4000
+```
+```JSON
+{"schema": {}}
+```
+<br />
 ## Setting up for development
 * clone repo: `git clone git@github.com:BaharaJr/nodejs-starter.git` 
 * change directory to nodejs-starter: 
@@ -37,5 +47,5 @@ Runs the application with [nodemon]("https://nodemon.io/"). Server is listening 
 <br />
 
 ## License
-
+WTFPL
 
