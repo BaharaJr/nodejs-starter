@@ -1,4 +1,5 @@
 import { Router } from 'express';
+import db from '../database/db'
 var router = Router();
 
 /* GET home page. */
