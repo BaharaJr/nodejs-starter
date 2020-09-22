@@ -49,7 +49,8 @@ Host: localhost:4000
 ```JSON
 {"schema": {}}
 ```
-<br />
+
 ## License
-WTFPL
+
+[WTFPL](LICENCE)
 
