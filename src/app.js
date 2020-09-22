@@ -1,20 +1,22 @@
+/* eslint-disable no-console */
+/* eslint-disable import/no-extraneous-dependencies */
 import express from 'express';
 import logger from 'morgan';
 import cors from 'cors';
 import http from 'http';
-import router from './routes/index';
 import chalk from 'chalk';
-import "@babel/polyfill";
+import router from './routes/index';
+import '@babel/polyfill';
 
 const app = express();
 const server = http.createServer(app);
 
 const bodyParser = require('body-parser');
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
-  extended: true
+  extended: true,
 }));
-
 
 app.use(express.json());
 app.use(logger('dev'));
@@ -29,7 +31,7 @@ app.use((req, res, next) => {
 });
 
 // error handler
-app.use((err, req, res, next) => {
+app.use((err, req, res) => {
   res.status(err.status || 500);
   res.json({
     message: err.message,
