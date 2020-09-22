@@ -1,0 +1,9 @@
+{
+  "execMap": {
+    "js": "babel-node"
+  },
+  "ext": "js, html, css, json",
+
+  "ignore": ["test/*", "docs/*"],
+  "delay": "3500"
+}

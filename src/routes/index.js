@@ -2,8 +2,8 @@ import { Router } from 'express';
 var router = Router();
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+router.get('/test', function(req, res, next) {
+  res.json({ title: 'NodeJs Club is awesome' });
 });
 
 export default router;
