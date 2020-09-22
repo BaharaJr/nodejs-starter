@@ -52,5 +52,5 @@ Host: localhost:4000
 
 ## License
 
-[WTFPL](LICENCE)
+[WTFPL](/LICENSE)
 
