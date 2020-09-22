@@ -23,7 +23,7 @@ Host: localhost:4000
 }
 ```
 
-### Test Database Connection: `/test`
+### Test Database Connection: `/connection`
 
 ```
 GET test
