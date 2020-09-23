@@ -50,8 +50,7 @@ Host: localhost:4000
 GET test
 Host: localhost:4000
 ```
-
-> Response Must Start with
+> Response
 
 ````JSON
 {
@@ -60,7 +59,8 @@ Host: localhost:4000
 "catalogname": "current_catalog",
 "format": "text",
 "message": "Database was connected successfully"
-}```
+}
+```
 
 ## License
 
