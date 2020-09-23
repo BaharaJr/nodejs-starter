@@ -52,7 +52,7 @@ Host: localhost:4000
 ```
 > Response
 
-````JSON
+```JSON
 {
 "databasename": "YOUR-DB-NAME",
 "command": "SELECT",
@@ -65,4 +65,4 @@ Host: localhost:4000
 ## License
 
 [WTFPL](/LICENSE.md)
-````
+
