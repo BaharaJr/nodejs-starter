@@ -10,9 +10,15 @@ router.get('/test', (req, res) => {
 
 /* Test Database Connection */
 router.get('/connection', async (req, res) => {
-  const query = 'SELECT nspname FROM pg_catalog.pg_namespace;';
+  const query = 'SELECT * FROM current_catalog;';
   const queries = await db.query(query);
-  res.json({ schema: queries });
+  res.json({
+    databasename: queries.rows[0].current_catalog,
+    command: queries.command,
+    catalogname: queries.fields[0].name,
+    format: queries.fields[0].format,
+    message: 'Database was connected successfully',
+  });
 });
 
 export default router;

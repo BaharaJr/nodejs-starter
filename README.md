@@ -47,8 +47,13 @@ Host: localhost:4000
 > Response Must Start with
 
 ```JSON
-{"schema": {}}
-```
+{
+"databasename": "YOUR-DB-NAME",
+"command": "SELECT",
+"catalogname": "current_catalog",
+"format": "text",
+"message": "Database was connected successfully"
+}```
 
 ## License
 
