@@ -44,7 +44,7 @@ Host: localhost:4000
 GET test
 Host: localhost:4000
 ```
-> Response Must Start with
+> Response
 
 ```JSON
 {
