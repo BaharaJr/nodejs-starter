@@ -53,7 +53,8 @@ Host: localhost:4000
 "catalogname": "current_catalog",
 "format": "text",
 "message": "Database was connected successfully"
-}```
+}
+```
 
 ## License
 
