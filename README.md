@@ -7,6 +7,7 @@ Express / Nodejs Starter with PostgreSQL
 ## Requirements
 
 - [Node.js](https://nodejs.org/) >= 6.x
+- [PostgresQL](https://www.postgresql.org/download/)
 
 <br />
 
