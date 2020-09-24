@@ -27,9 +27,9 @@ app.use(router);
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => {
-  const err = new Error(
-    'Something went wrong. Be assured we\'re working on it!',
-  );
+  const err = res.send({
+    message: 'Something went wrong. Be assured we\'re working on it!',
+  });
   err.status = 404;
   next(err);
 });
