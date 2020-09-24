@@ -21,4 +21,15 @@ router.get('/connection', async (req, res) => {
   });
 });
 
+/* Get Default route */
+router.get('/', async (req, res) => {
+  const queries = await db.query('SELECT * FROM current_catalog;');
+  if (queries.command === 'SELECT') {
+    res.send({
+      message: 'The app and database connection were successful',
+      hurray: 'Enjoy NodeJs',
+    });
+  }
+});
+
 export default router;
