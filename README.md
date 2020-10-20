@@ -1,8 +1,14 @@
-# NodeJs Starter
+<h1 align="center">Welcome to node-starter 👋</h1>
+<p>
+  
+  <a href="LICENCE.md" target="_blank">
+    <img alt="License: WTFPL" src="https://img.shields.io/badge/License-WTFPL-yellow.svg" />
+  </a>
+</p>
 
-Express / Nodejs Starter with PostgreSQL
+  
+Minimal Express / Nodejs Starter with PostgreSQL Database
 
-<br />
 
 ## Requirements
 
@@ -11,14 +17,32 @@ Express / Nodejs Starter with PostgreSQL
 
 <br />
 
-## Setting up for development
+## Getting started
 
-- clone repo: `git clone git@github.com:BaharaJr/nodejs-starter.git`
+### Setting up for development
+
+- Clone repo: `git clone git@github.com:BaharaJr/nodejs-starter.git`
+```sh
+$ git clone git@github.com:BaharaJr/nodejs-starter.git
+```
 - change directory to nodejs-starter:
-- Create .env file and add db URL. Sample: `DATABASE_URL=postgres://postgres:YOUR-DB-PASSOWRD@YOUR-DB-SERVER(i.e localhost):POSTGRES-PORT(DEFAULT IS 5432)/YOUR0-DB-NAME `
+
+```sh
+$ cd nodejs-starter
+```
+- Create .env file and add db URL. Sample: `DATABASE_URL=postgres://username(DEFAULT is postgres):your-db-passowrd@your-hostname(i.e localhost):postgres-port(DEFAULT is 5432)/your-db-name`
+
+```sh
+$ cp .env.example .env
+```
+
 - In the .env file, also add the port you would like to use. i.e `PORT=4000`
-- Install packages with `npm i`
-  <br />
+- Install packages with 
+```sh
+$  npm i
+```
+
+<br />
 
 **Run**
 
@@ -30,7 +54,10 @@ $ npm run start
 
 > The App will run on the port you added in your .env file (`localhost:YOUR-PORT`)
 
+
 ### Test Endpoint: `/test`
+
+> Request
 
 ```
 GET test
@@ -41,7 +68,7 @@ Host: localhost:4000
 
 ```JSON
 {
-"title": "NodeJs Club is awesome"
+  "title": "NodeJs Club is awesome"
 }
 ```
 
@@ -55,15 +82,25 @@ Host: localhost:4000
 
 ```JSON
 {
-"databasename": "YOUR-DB-NAME",
-"command": "SELECT",
-"catalogname": "current_catalog",
-"format": "text",
-"message": "Database was connected successfully"
+  "databasename": "databse_name",
+  "command": "SELECT",
+  "catalogname": "current_catalog",
+  "format": "text",
+  "message": "Database was connected successfully"
 }
 ```
 
-## License
 
-[WTFPL](/LICENSE.md)
+## Run tests
 
+```sh
+npm test
+```
+
+## Show your support
+
+Give a ⭐️ if this project helped you!
+
+## 📝 License
+
+This project is [WTFPL](/LICENSE.md) licensed.
