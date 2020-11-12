@@ -7,7 +7,7 @@
 </p>
 
   
-Minimal Express / Nodejs Starter with PostgreSQL Database
+Minimal Express / Nodejs Starter with PostgreSQL Database(No ORM)
 
 
 ## Requirements
